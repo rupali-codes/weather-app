@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weather-app</title>
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<link rel="icon" type="image/png" href="/img/weather-icon.png">
+</head>
+<body>
+	<div class="main-content">
+		{{>header}}
+
+		<form>
+			<input type="text" id="address" placeholder="Type an address...">
+			<button id="search">Go!</button>
+		</form>
+
+		<div class="data">
+			<h1>Location</h1>
+			<p class="loc">...Loading</p>
+			<h1>Forecast</h1>
+			<p class="forecast">...Loading</p>
+		</div>
+
+		<div class="err">
+			<h1>Error!</h1>
+			<p>Couldn't found your location :(</p>
+		</div>
+
+		<h1 class="loading">...loading</h1>
+	</div>
+
+	{{>footer}}
+
+	<script src="/scripts/app.js"></script>
+</body>
+</html>
