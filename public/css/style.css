@@ -4,6 +4,10 @@
 }
 body{
 	background-color: teal;
+	background-image: url(../img/weather.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-blend-mode: multiply;
 	color: white;
 	background-size: cover;
 	text-align: center;
@@ -75,7 +79,7 @@ form{
 }
 #search{
 	border-radius: 0px 20px 20px 0px;
-	background-color: rgba(1, 1, 1, 0.5);
+	background-color: rgba(1, 1, 1, 0.6);
 	color: white;
 }
 #search:hover{
@@ -101,4 +105,25 @@ ul{
 .about{
 	margin: 50px;
 	text-align: left;
+	font-size: 20px;
+}
+
+@media (max-width:  700px){
+	.h1{
+		font-size: 25px;
+	}
+	form{
+		margin: 20px;
+	}
+	.data{
+		text-align: left;
+		padding: 10px;
+		margin: auto 10px;
+	}
+	#address, #search{
+		padding: 10px;
+		font-size: 15px;
+		border: none;
+		text-align: center;
+	}
 }

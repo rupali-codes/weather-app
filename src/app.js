@@ -61,7 +61,7 @@ app.get('/weather', (req, res) => {
 					error: 'Geocode Error'
 				})
 			}else{
-				forecast(latitude, longitude, (err, forecastData) => {
+				forecast(latitude, longitude, (err, forecastData, observationTime) => {
 					if(err){
 						return res.send({
 							error: 'Forcast Error'
@@ -69,7 +69,8 @@ app.get('/weather', (req, res) => {
 					}else{
 						res.send({
 							Location: location,
-							Forecast: forecastData
+							Forecast: forecastData,
+							ObservationTime: observationTime 
 						})
 					}
 				})

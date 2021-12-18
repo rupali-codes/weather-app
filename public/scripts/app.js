@@ -5,6 +5,7 @@ const address = document.querySelector('#address');
 const Displayata = document.querySelector('.data');
 const err = document.querySelector('.err');
 const loading = document.querySelector('.loading');
+const observationTime = document.querySelector('.observation-time');
 
 /*
  * http://localhost:3000/weather?address=${adrs} - when running locally
@@ -22,6 +23,7 @@ const getForecast = (adrs) => {
 		else{
 			forecast.textContent = data.Forecast;
 			loc.textContent = data.Location;
+			observationTime.textContent = data.ObservationTime; 
 			err.style.display = 'none';
 			loading.style.display = 'none';
 			Displayata.style.display = 'block';

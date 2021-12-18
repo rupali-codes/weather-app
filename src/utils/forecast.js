@@ -5,12 +5,12 @@ const forecast = (lat, long, callback) => {
 
 	request({url, json:true}, function(err, {body}){
 		if(err){
-			callback("Something went wrong.", undefined);
+			callback("Something went wrong.", undefined, undefined);
 		}else if(body.error){
-			callback("Unable to load data", undefined)
+			callback("Unable to load data", undefined, undefined);
 		}else{
 			const data = body.current;
-			callback(undefined, `${data.weather_descriptions[0]}, the current Temperature is ${data.temperature} degrees out and it feels like ${data.feelslike} degrees out`);
+			callback(undefined, `${data.weather_descriptions[0]}, the current Temperature is ${data.temperature} degrees out and it feels like ${data.feelslike} degrees out.`,data.observation_time);
 		}
 	})
 }
