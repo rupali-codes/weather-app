@@ -10,7 +10,9 @@ const forecast = (lat, long, callback) => {
 			callback("Unable to load data", undefined, undefined);
 		}else{
 			const data = body.current;
-			callback(undefined, `${data.weather_descriptions[0]}, the current Temperature is ${data.temperature} degrees out and it feels like ${data.feelslike} degrees out.`,data.observation_time);
+			const current = (data.temperature - 32) * 5/9;
+			const feelsLike = (data.feelslike - 32) * 5/9;
+			callback(undefined, `${data.weather_descriptions[0]}, the current Temperature is ${current.toFixed(2)} degree celsius out and it feels like ${feelsLike.toFixed(2)} degree celsius out.`,data.observation_time);
 		}
 	})
 }

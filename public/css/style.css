@@ -105,7 +105,7 @@ ul{
 .about{
 	margin: 50px;
 	text-align: left;
-	font-size: 20px;
+	font-size: 30px;
 }
 
 @media (max-width:  700px){
@@ -125,5 +125,17 @@ ul{
 		font-size: 15px;
 		border: none;
 		text-align: center;
+	}
+	.help{
+		margin: 20px;
+		padding: 5px;
+		font-size: 25px;
+	}
+	ul{
+		margin: 20px;
+	}
+	.about{
+		margin: 25px;
+		font-size: 25px;
 	}
 }

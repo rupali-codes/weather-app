@@ -10,7 +10,6 @@ const observationTime = document.querySelector('.observation-time');
 /*
  * http://localhost:3000/weather?address=${adrs} - when running locally
  * /weather?address=${adrs} - when hosting on heroku
-
 */
 
 const getForecast = (adrs) => {
