@@ -2,24 +2,22 @@
 
 Know your waether in easy way
 
-![preview](./images/design/desktop-preview.jpg)
-
 ## Technologies used
 
  <table>
  	<tbody>
  		<tr>
- 			<td align="Center" width="50%">
+ 			<td align="Center" width="40%">
  				<a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noreferrer">
  					<img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg" width="45" height="45" alt="HTML">
  				</a> <br> HTML
  			</td>
- 			<td align="Center" width="50%">
+ 			<td align="Center" width="40%">
  				<a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noreferrer">
  					<img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/css3-colored.svg" width="45" height="45" alt="CSS">
  				</a> <br> CSS
  			</td>
- 			<td align="Center" width="50%">
+ 			<td align="Center" width="40%">
  				<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer">
  					<img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg" width="45" height="45" alt="JavaScript">
  				</a> <br> JavaScript
